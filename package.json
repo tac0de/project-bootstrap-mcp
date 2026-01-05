@@ -1,14 +1,14 @@
 {
   "name": "@tac0de/project-bootstrap-mcp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Project Bootstrap MCP API tooling for launching MCP bootstrap definitions and documentation.",
   "main": "dist/index.js",
   "bin": {
-    "project-bootstrap-mcp": "bin/project-bootstrap-mcp.js"
+    "project-bootstrap-mcp": "dist/bin/project-bootstrap-mcp.js"
   },
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node ./bin/project-bootstrap-mcp.js",
+    "start": "npm run build && node ./dist/bin/project-bootstrap-mcp.js",
     "test": "node --test -r ts-node/register test/store.test.ts"
   },
   "keywords": [

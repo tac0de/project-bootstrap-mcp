@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const startServer = require('../dist/server').default;
+import startServer from '../src/server.js';
 
-function parsePort(args, envPort) {
+function parsePort(args: string[], envPort: string | undefined): number {
   let portValue = envPort || '4000';
   args.forEach((arg, index, list) => {
     if (arg === '--port' && list[index + 1]) {
