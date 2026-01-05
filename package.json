@@ -36,12 +36,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/project-bootstrap-mcp.git"
+    "url": "https://github.com/tac0de/project-bootstrap-mcp"
   },
-  "bugs": {
-    "url": "https://github.com/your-org/project-bootstrap-mcp/issues"
-  },
-  "homepage": "https://github.com/your-org/project-bootstrap-mcp#readme",
   "dependencies": {
     "express": "^4.19.2"
   }
