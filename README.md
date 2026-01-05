@@ -45,7 +45,40 @@ This project turns the MCP (Management Control Plane) bootstrap documentation in
 - **Can the project goal be explained in one sentence?** Yes — “Expose MCP bootstrap docs as runnable API/CLI tooling ready for npm/GitHub distribution.”
 - **Can success be evaluated without subjective judgment?** Yes — API functionality and `npm test` results provide objective verification.
 
-## Implementation & Usage
+## MCP Server Usage
+
+### Installation
+
+- `npm install -g project-bootstrap-mcp` (or `npm install project-bootstrap-mcp` for local use).
+
+### Run (stdio)
+
+- `project-bootstrap-mcp` (or `npm start`) launches the server on port 4000 unless overridden.
+- Flags: `--port <number>` or `-p <number>` (or set the `PORT` env var) to change the listening port.
+
+### Example MCP Client Config
+
+```json
+{
+  "command": "npx",
+  "args": ["-y", "project-bootstrap-mcp"]
+}
+```
+
+### Tools
+
+- `bootstrap_list` → `GET /api/bootstraps`
+- `bootstrap_get` → `GET /api/bootstraps/:id`
+- `bootstrap_create` → `POST /api/bootstraps`
+- `service_status` → `GET /api/status`
+
+### Documents
+
+- `scope` → documents the allowed MCP actions and active MCPs (mirrors `examples/AGENTS.md`).
+- `behavior` → describes feature behavior expectations in the README PRD section.
+- `forbidden` → clarifies forbidden actions via the Agents contract (`contracts/agents.contract.md`).
+- `contract` → references the PRD/TRD contract requirements.
+- `bug_report_template` → placeholder for future debugging templates (add once defined).
 
 ### API Overview
 
@@ -56,7 +89,7 @@ This project turns the MCP (Management Control Plane) bootstrap documentation in
 
 ### CLI / Execution
 
-- `npm start` or the `project-bootstrap-mcp` binary starts the server on port 4000 by default.
+- `project-bootstrap-mcp` binary (installed globally) or `npm start` starts the server on port 4000 by default.
 - Override the port with `--port` or `-p` (e.g., `project-bootstrap-mcp --port 5000`), or set the `PORT` environment variable.
 
 ### Testing & Validation
