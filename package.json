@@ -1,6 +1,6 @@
 {
   "name": "@tac0de/project-bootstrap-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project Bootstrap MCP API tooling for launching MCP bootstrap definitions and documentation.",
   "main": "src/index.js",
   "bin": {
