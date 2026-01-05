@@ -1,7 +1,7 @@
-const test = require('node:test');
-const assert = require('node:assert');
-const BootstrapStore = require('../src/store');
-const { validateBootstrapPayload } = require('../src/validators');
+import test from 'node:test';
+import assert from 'node:assert';
+import BootstrapStore from '../src/store';
+import { validateBootstrapPayload } from '../src/validators';
 
 test('BootstrapStore should add and list records', () => {
   const store = new BootstrapStore();
@@ -9,9 +9,7 @@ test('BootstrapStore should add and list records', () => {
     name: 'bootstrap-a',
     description: 'test',
     primaryAction: 'deploy',
-    steps: [
-      { title: 'step1', detail: 'run' },
-    ],
+    steps: [{ title: 'step1', detail: 'run' }],
   };
 
   const record = store.add(payload);

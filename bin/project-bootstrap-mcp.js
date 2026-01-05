@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const startServer = require('../src/server');
+const startServer = require('../dist/server').default;
 
 function parsePort(args, envPort) {
   let portValue = envPort || '4000';
