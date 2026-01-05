@@ -61,7 +61,7 @@ This project turns the MCP (Management Control Plane) bootstrap documentation in
 ```json
 {
   "command": "npx",
-  "args": ["-y", "project-bootstrap-mcp"]
+  "args": ["-y", "@tac0de/project-bootstrap-mcp"]
 }
 ```
 
