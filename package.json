@@ -1,0 +1,45 @@
+{
+  "name": "project-bootstrap-mcp",
+  "version": "1.0.0",
+  "description": "Project Bootstrap MCP API tooling for launching MCP bootstrap definitions and documentation.",
+  "main": "src/index.js",
+  "bin": {
+    "project-bootstrap-mcp": "bin/project-bootstrap-mcp.js"
+  },
+  "scripts": {
+    "start": "node ./bin/project-bootstrap-mcp.js",
+    "test": "node --test test/store.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "bootstrap",
+    "api",
+    "cli",
+    "project-tools"
+  ],
+  "author": "wonyoung choi",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "src",
+    "test",
+    "LICENSE",
+    "README.md",
+    "TRD.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/project-bootstrap-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/project-bootstrap-mcp/issues"
+  },
+  "homepage": "https://github.com/your-org/project-bootstrap-mcp#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
