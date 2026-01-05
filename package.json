@@ -1,5 +1,5 @@
 {
-  "name": "project-bootstrap-mcp",
+  "name": "@tac0de/project-bootstrap-mcp",
   "version": "1.0.0",
   "description": "Project Bootstrap MCP API tooling for launching MCP bootstrap definitions and documentation.",
   "main": "src/index.js",
@@ -17,6 +17,9 @@
     "cli",
     "project-tools"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "wonyoung choi",
   "license": "MIT",
   "type": "commonjs",
